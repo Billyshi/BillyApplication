@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int count = cursor.getCount();
                     String result = "result count= " + count +"\n";
                     while(cursor.moveToNext()) {
-                        result += cursor.getString(0) +", " +cursor.getString(1)+"\n";
+                        result += "单词： " +cursor.getString(1)+"， 单词描述： " + cursor.getString(0) +"\n";
                     }
                     mTvShow.setText(result);
                 }
